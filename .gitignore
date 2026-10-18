@@ -1,0 +1,22 @@
+# Code-only handoff: permit only source and repository documentation/configuration.
+*
+!*/
+!*.py
+!README.md
+!requirements.txt
+!.gitignore
+!.gitattributes
+!.github/workflows/*.yml
+
+# Exclude local tools, inputs, generated results, environments, and editor state.
+append_optimization_slides.py
+.idea/
+.vscode/
+.venv/
+venv/
+__pycache__/
+.pytest_cache/
+.ruff_cache/
+results/
+build/
+dist/
